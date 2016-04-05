@@ -1,7 +1,9 @@
 <%# index.erb %>
-<!DOCTYPE html>
-<html>
-<body>
-  <p><%= @message %></p>
-</body>
-</html>
+<h1><%= @page_title %></h1>
+<p>
+  <ul>
+    <% @webs.each do |w| %>
+      <li><%= w %></li>
+    <% end %>
+  </ul>
+</p>
