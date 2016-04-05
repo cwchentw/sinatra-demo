@@ -9,3 +9,4 @@ Use `git checkout` toward a specific branch to view the code.
 ## Branches at a Glance
 
 - 0.0.1: 'Hello, World'
+- 0.0.2: 'Simple ERB page'
