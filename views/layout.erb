@@ -10,7 +10,8 @@
 </head>
 <body>
   <%= erb :navbar %>
-  <%= yield %>
+  <%= yield_content :title %>
+  <%= yield_content :content %>
   <%= erb :footer, :locals => { author: author} %>
 </body>
 </html>

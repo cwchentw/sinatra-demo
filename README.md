@@ -12,3 +12,4 @@ Use `git checkout` toward a specific branch to view the code.
 - 0.0.2: 'Simple ERB page'
 - 0.0.3: 'ERB pages with layout.erb'
 - 0.0.4: 'Use partials'
+- 0.0.5: 'Use content_for'
