@@ -2,15 +2,12 @@
 require 'sinatra'
 
 get '/' do
-  @title = "Hello, Web Programming"
-  @page_title = "Web technologies"
-  @webs = ["HTML", "CSS", "JavaScript", "Server-side scripting", "Database"]
-  erb :index
-end
-
-get '/about' do
-  @title = "About this site"
-  @page_title = "About This Site"
-  @message = "This site introduces web technologies."
-  erb :about
+  erb :index, :locals => {
+    author: "Michael Chen",
+    description: "My Website",
+    keywords: "Sinatra Demo Website",
+    title: "Hello, Sinatra",
+    page_title: "Web technologies",
+    webs: ["HTML", "CSS", "JavaScript", "Server-side scripting", "Database"]
+  }
 end

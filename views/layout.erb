@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= @title %></title>
+  <%= erb :head, :locals => {
+                    title: title,
+                    author: author,
+                    description: description,
+                    keywords: keywords
+                    } %>
 </head>
 <body>
+  <%= erb :navbar %>
   <%= yield %>
+  <%= erb :footer, :locals => { author: author} %>
 </body>
 </html>
