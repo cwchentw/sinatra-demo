@@ -14,3 +14,4 @@ Use `git checkout` toward a specific branch to view the code.
 - 0.0.4: 'Use partials'
 - 0.0.5: 'Use content_for'
 - 0.0.6: 'Error handling pages'
+- 0.1.0: 'Use an external CSS file'

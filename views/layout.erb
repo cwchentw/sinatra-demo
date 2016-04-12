@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>My website</title>
+  <%= erb :head, :locals => {
+                    title: @title,
+                    author: @author,
+                    description: @description,
+                    keywords: @keywords
+                    } %>
 </head>
 <body>
-  <%= yield %>
+  <%= erb :navbar %>
+  <div class="main">
+    <%= yield_content :title %>
+    <%= yield_content :content %>
+    <%= erb :footer, :locals => { author: @author} %>
+  </div>
 </body>
 </html>
