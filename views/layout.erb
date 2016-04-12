@@ -2,16 +2,18 @@
 <html>
 <head>
   <%= erb :head, :locals => {
-                    title: title,
-                    author: author,
-                    description: description,
-                    keywords: keywords
+                    title: @title,
+                    author: @author,
+                    description: @description,
+                    keywords: @keywords
                     } %>
 </head>
 <body>
   <%= erb :navbar %>
-  <%= yield_content :title %>
-  <%= yield_content :content %>
-  <%= erb :footer, :locals => { author: author} %>
+  <div class="main">
+    <%= yield_content :title %>
+    <%= yield_content :content %>
+    <%= erb :footer, :locals => { author: @author} %>
+  </div>
 </body>
 </html>
