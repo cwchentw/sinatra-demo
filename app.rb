@@ -6,9 +6,9 @@ set :show_exceptions, false
 
 # Shared variables of all HTTP actions
 before do
-  @title = "My Next Awesome Website",
-  @author = "Michael Chen",
-  @description = "My Next Awesome Website starts from here",
+  @title = "My Next Awesome Website"
+  @author = "Michael Chen"
+  @description = "My Next Awesome Website starts from here"
   @keywords = "awesome,wonderful,fantastic"
 end
 
